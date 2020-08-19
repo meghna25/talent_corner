@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">talent_corner</string>
     <string name="question_paper">Question Paper</string>
-    <string name="instruction">Instruction</string>
+    <string name="instructions">Instruction</string>
     <string name="instruction">Instruction</string>
     <string name="questionpaper">QuestionPaper</string>
+    <string name="physics">Physics</string>
+    <string name="not_answered">Not Answered</string>
+    <string name="not_visited">Not visited</string>
+    <string name="review">Review</string>
+    <string name="answered_ans_marked_for_review">Answered ans Marked for Review</string>
+    <string name="todos">TODO</string>
+    <string name="todot">TODO</string>
+    <string name="answered">Answered</string>
+    <string name="todor">TODO</string>
+    <string name="todou">TODO</string>
+    <string name="todov">TODO</string>
+    <string name="physics">Physics</string>
 </resources>
