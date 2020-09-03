@@ -4,7 +4,7 @@
     <string name="instructions">Instruction</string>
     <string name="instruction">Instruction</string>
     <string name="questionpaper">QuestionPaper</string>
-    <string name="physics">Physics</string>
+    <string name="physicss">Physics</string>
     <string name="not_answered">Not Answered</string>
     <string name="not_visited">Not visited</string>
     <string name="review">Review</string>
@@ -16,4 +16,6 @@
     <string name="todou">TODO</string>
     <string name="todov">TODO</string>
     <string name="physics">Physics</string>
+    <string name="answered_and_marked_for_review">Answered and marked for Review</string>
+    <string name="marked_for_review">Marked for review</string>
 </resources>

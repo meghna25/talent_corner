@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
     tools:context=".MainActivity">
+
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="388dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:background="@drawable/border"
+        android:layout_width="372dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="3dp"
+
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -31,72 +38,240 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/rounded_corner"
-            android:text="@string/questionpaper"
+            android:background="@drawable/shadow3"
+            android:text="question paper"
             android:textColor="#0E0E0E"
             android:textColorLink="#FFFFFF" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/instruction"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="24dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/shadow3"
             android:text="@string/instruction"
             android:textColor="#090909"
             android:textColorLink="#FFFFFF" />
-    </LinearLayout>
 
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="387dp"
-        android:layout_height="233dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        android:layout_width="375dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shadow1"
+        app:layout_constraintBottom_toTopOf="@+id/sub"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="47dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/answered" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="47dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/grey" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/review" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="47dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/notanswered" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="47dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Answered"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="Not Answered"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="30dp"
+            android:text="Not Visited"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="85dp"
+            android:text="@string/marked_for_review"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/answered_and_marked_for_review"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <TextView
         android:id="@+id/sub"
-        android:layout_width="391dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
+        android:layout_width="375dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
         android:background="@drawable/round_2"
-        android:text="@string/physics"
+        android:text="Physics"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="392dp"
-        android:layout_height="359dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="375dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shadow1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sub">
 
@@ -104,12 +279,6 @@
             android:id="@+id/twenty_five"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -117,18 +286,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/twenty"
             app:layout_constraintTop_toBottomOf="@+id/twenty_four"
-            tools:text="25" />
+            android:text="25"
+            tools:text="25"
+            />
 
         <TextView
             android:id="@+id/twenty_four"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -136,18 +301,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ninteen"
             app:layout_constraintTop_toBottomOf="@+id/twent_three"
-            tools:text="24" />
+            tools:text="24"
+            android:text="24"/>
 
         <TextView
             android:id="@+id/twent_three"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -155,18 +315,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/eighteen"
             app:layout_constraintTop_toBottomOf="@+id/seventeen"
-            tools:text="23" />
+            tools:text="23"
+            android:text="23"/>
 
         <TextView
             android:id="@+id/twenty_two"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -174,18 +329,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/seventeen"
             app:layout_constraintTop_toBottomOf="@+id/sixteen"
-            tools:text="20" />
+            tools:text="20"
+            android:text="22"/>
 
         <TextView
             android:id="@+id/twenty_one"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -194,18 +345,13 @@
             app:layout_constraintStart_toEndOf="@+id/sixteen"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="21" />
+            tools:text="21"
+            android:text="21"/>
 
         <TextView
             android:id="@+id/twenty"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -213,18 +359,13 @@
             app:layout_constraintEnd_toStartOf="@+id/twenty_five"
             app:layout_constraintStart_toEndOf="@+id/fifteen"
             app:layout_constraintTop_toBottomOf="@+id/ninteen"
-            tools:text="20" />
+            tools:text="20"
+            android:text="20"/>
 
         <TextView
             android:id="@+id/ninteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -232,37 +373,27 @@
             app:layout_constraintEnd_toStartOf="@+id/twenty_four"
             app:layout_constraintStart_toEndOf="@+id/fourteen"
             app:layout_constraintTop_toBottomOf="@+id/eighteen"
-            tools:text="19" />
+            tools:text="19"
+            android:text="19"/>
 
         <TextView
             android:id="@+id/eighteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/ninteen"
             app:layout_constraintEnd_toStartOf="@+id/twent_three"
             app:layout_constraintStart_toEndOf="@+id/thirteen"
-            app:layout_constraintTop_toBottomOf="@+id/tweleve"
-            tools:text="18" />
+            app:layout_constraintTop_toBottomOf="@+id/seventeen"
+            tools:text="18"
+            android:text="18"/>
 
         <TextView
             android:id="@+id/seventeen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -270,18 +401,14 @@
             app:layout_constraintEnd_toStartOf="@+id/twenty_two"
             app:layout_constraintStart_toEndOf="@+id/tweleve"
             app:layout_constraintTop_toBottomOf="@+id/eleven"
-            tools:text="17" />
+            tools:text="17"
+            android:text="17"/>
 
         <TextView
             android:id="@+id/sixteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -290,18 +417,13 @@
             app:layout_constraintStart_toEndOf="@+id/eleven"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.2"
-            tools:text="16" />
+            tools:text="16"
+            android:text="16"/>
 
         <TextView
             android:id="@+id/fifteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -309,18 +431,13 @@
             app:layout_constraintEnd_toStartOf="@+id/twenty"
             app:layout_constraintStart_toEndOf="@+id/ten"
             app:layout_constraintTop_toBottomOf="@+id/fourteen"
-            tools:text="15" />
+            tools:text="15"
+            android:text="15"/>
 
         <TextView
             android:id="@+id/fourteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -328,18 +445,13 @@
             app:layout_constraintEnd_toStartOf="@+id/ninteen"
             app:layout_constraintStart_toEndOf="@+id/nine"
             app:layout_constraintTop_toBottomOf="@+id/thirteen"
-            tools:text="14" />
+            tools:text="14"
+            android:text="14"/>
 
         <TextView
             android:id="@+id/thirteen"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -347,18 +459,13 @@
             app:layout_constraintEnd_toStartOf="@+id/eighteen"
             app:layout_constraintStart_toEndOf="@+id/eight"
             app:layout_constraintTop_toBottomOf="@+id/tweleve"
-            tools:text="13" />
+            tools:text="13"
+            android:text="13"/>
 
         <TextView
             android:id="@+id/tweleve"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -366,18 +473,13 @@
             app:layout_constraintEnd_toStartOf="@+id/seventeen"
             app:layout_constraintStart_toEndOf="@+id/seven"
             app:layout_constraintTop_toBottomOf="@+id/eleven"
-            tools:text="12" />
+            tools:text="12"
+            android:text="12"/>
 
         <TextView
             android:id="@+id/eleven"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -386,18 +488,13 @@
             app:layout_constraintStart_toEndOf="@+id/six"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="11" />
+            tools:text="11"
+            android:text="11"/>
 
         <TextView
             android:id="@+id/ten"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -405,18 +502,13 @@
             app:layout_constraintEnd_toStartOf="@+id/fifteen"
             app:layout_constraintStart_toEndOf="@+id/five"
             app:layout_constraintTop_toBottomOf="@+id/nine"
-            tools:text="10" />
+            tools:text="10"
+            android:text="10"/>
 
         <TextView
             android:id="@+id/nine"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -424,18 +516,13 @@
             app:layout_constraintEnd_toStartOf="@+id/fourteen"
             app:layout_constraintStart_toEndOf="@+id/four"
             app:layout_constraintTop_toBottomOf="@+id/eight"
-            tools:text="9" />
+            tools:text="9"
+            android:text="9"/>
 
         <TextView
             android:id="@+id/eight"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -443,18 +530,13 @@
             app:layout_constraintEnd_toStartOf="@+id/thirteen"
             app:layout_constraintStart_toEndOf="@+id/three"
             app:layout_constraintTop_toBottomOf="@+id/seven"
-            tools:text="8" />
+            tools:text="8"
+            android:text="8"/>
 
         <TextView
             android:id="@+id/seven"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -462,18 +544,13 @@
             app:layout_constraintEnd_toStartOf="@+id/tweleve"
             app:layout_constraintStart_toEndOf="@+id/two"
             app:layout_constraintTop_toBottomOf="@+id/six"
-            tools:text="7" />
+            tools:text="7"
+            android:text="7"/>
 
         <TextView
             android:id="@+id/six"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -481,18 +558,13 @@
             app:layout_constraintEnd_toStartOf="@+id/eleven"
             app:layout_constraintStart_toEndOf="@+id/one"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="6" />
+            tools:text="6"
+            android:text="6"/>
 
         <TextView
             android:id="@+id/five"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -500,18 +572,13 @@
             app:layout_constraintEnd_toStartOf="@+id/ten"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/four"
-            tools:text="5" />
+            tools:text="5"
+            android:text="5"/>
 
         <TextView
             android:id="@+id/four"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -519,18 +586,13 @@
             app:layout_constraintEnd_toStartOf="@+id/nine"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/three"
-            tools:text="4" />
+            tools:text="4"
+            android:text="4"/>
 
         <TextView
             android:id="@+id/three"
             android:layout_width="59dp"
             android:layout_height="62dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -539,18 +601,13 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/two"
-            tools:text="3" />
+            tools:text="3"
+            android:text="3"/>
 
         <TextView
             android:id="@+id/two"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -558,18 +615,13 @@
             app:layout_constraintEnd_toStartOf="@+id/seven"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/one"
-            tools:text="2" />
+            tools:text="2"
+            android:text="2"/>
 
         <TextView
             android:id="@+id/one"
             android:layout_width="59dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/background"
             android:gravity="center"
             android:textStyle="bold"
@@ -577,10 +629,13 @@
             app:layout_constraintEnd_toStartOf="@+id/six"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="1" />
+            tools:text="1"
+            android:text="1"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>>
+
+</ScrollView>
